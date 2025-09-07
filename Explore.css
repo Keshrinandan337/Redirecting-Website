@@ -1,0 +1,142 @@
+button{
+    font-size: 13px;
+    background-color: #5e5a5a;
+    color: #f9b108;
+    text-decoration: none;
+    border: 2px solid#fff;
+    padding: 13px 17px;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: inline-block;
+    width: 8%;
+    cursor: pointer;
+}
+
+#feedback {
+    position: absolute; 
+    bottom: -17px; /* Distance from the bottom edge of the page */
+    left: 50%; /* Centers the button horizontally */
+    width: 100% ;
+    transform: translateX(-50%); /* Adjusts the position to exactly center */
+    text-align: center; /* Aligns the button content properly */
+    z-index: 10; /* Ensures it stays clickable and visible */
+}
+
+#back {
+    position: absolute;
+    top: 40px; /* Distance from the bottom of the page */
+    left: 80px; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Adjusts the position to exactly center */
+    width: 100%; 
+    text-align: center; /* Centers the content (button) */
+    z-index: 10;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    color: #fbbe25;
+}
+
+.header h1 {
+    font-size: 51px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 20px;
+    color: #acf9ea;
+}
+
+.feedback-text {
+    text-align: center;
+    margin: 20px 0; /* Adds space around the feedback text */
+    color: #d39e66; /* Matches the color scheme */
+    font-size: 22px; /* Easy to read font size */
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background */
+    border-radius: 10px; /* Softens the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add background image to the whole page */
+body {
+    background-image: url('images/image2.jpg'); /* Replace 'background.jpg' with your image URL */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background image stay fixed while scrolling */
+    height: 100vh; /* Ensure the background image covers the full viewport */
+    color: white; 
+}
+
+
+/* Container for all sections */
+.sections-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 0 20px;
+    gap: 33px;
+    width: 100%;
+}
+
+/* Individual Section */
+.section {
+    position: relative;
+    width: 250%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(43, 210, 143);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px; /* Add space between sections and buttons */
+}
+
+/* Specific Backgrounds for Each Section */
+#travelling {
+    background-image: url('images/travelling.jpeg'); /* Background for Travelling */
+}
+
+#foody {
+    background-image: url('images/food.jpeg'); /* Background for Foody */
+}
+
+#shopping {
+    background-image: url('images/Shopping.jpeg'); /* Background for Shopping */
+}
+
+
+
+ 

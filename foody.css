@@ -1,0 +1,136 @@
+/* General Styles for the Page */
+body {
+    background-image: url('images/foody\ back.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack the heading and container vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#back {
+    position: absolute;
+    top: 13px; /* Distance from the bottom of the page */
+    left: 80px; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Adjusts the position to exactly center */
+    width: 100%; 
+    text-align: center; /* Centers the content (button) */
+    z-index: 10;
+}
+
+button{
+    font-size: 13px;
+    background-color: #5e5a5a;
+    color: #f9b108;
+    text-decoration: none;
+    border: 2px solid#fff;
+    padding: 13px 17px;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: inline-block;
+    width: 8%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #0e0e0d;
+}
+
+/* Heading Styles */
+.page-heading {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-top: 50px; /* Space from the top */
+    margin-bottom: 40px; /* Space between heading and cards */
+    color: #373637;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for better readability */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition on hover */
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Logo Image Styling */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease; /* Transition on image hover */
+}
+
+/* Image Hover Effect */
+.card img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Button Styles */
+.card button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition on hover */
+    margin-top: auto;
+}
+
+/* Button Hover Effect */
+.card button:hover {
+    background-color: #3700b3; /* Darken button on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Button Active Effect */
+.card button:active {
+    background-color: #1e004c; /* Darker on active */
+    transform: scale(1); /* Return to original size when clicked */
+}
+
+header{
+    background-color: rgb(242, 217, 158);
+    width: 100%;
+    height: 100px;
+}

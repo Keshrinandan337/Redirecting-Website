@@ -1,0 +1,110 @@
+/* Style for the top center heading */
+.page-heading {
+    text-align: center;
+    padding: -7px 0;
+    background-color: #131111; /* Light background for emphasis */
+    border-bottom: 2px solid #555;
+    font-size: 24px;
+    font-weight: bold;
+    color: #a46405;
+    margin-bottom: 10px;
+}
+
+.section {
+    padding: 20px;
+    height: 245px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    background-size: cover;
+    color: rgb(28, 70, 6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section h1 {
+    visibility: hidden; /* Hides the text but keeps its space */
+}
+
+.go-back-btn {
+    position: fixed; /* Keeps the button in a fixed position even on scroll */
+    top: 50px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    padding: 8px 15px;
+    background-color: #f5cc6e;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease;
+    z-index: 100;
+}
+
+.go-back-btn:hover {
+    background-color: #333;
+}
+
+
+/* specific for section hover */
+.section:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific backgrounds for each section */
+#roadways {
+    background: url('images/road.jpg') no-repeat center center/cover;
+}
+
+#railways {
+    background: url('images/railway.jpg') no-repeat center center/cover;
+}
+
+#Airways {
+    background: url('images/plane.jpg') no-repeat center center/cover;
+    background-size: 100% 170%;
+}
+
+button {
+    background-color: #f5cc6e;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #dfcca0;
+}
+
+/* .footer-description h1{
+
+} */
+
+.footer-description {
+    background-color: #edd8b2; /* Soft background to distinguish it */
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    border-top: 2px solid #555; /* Visual separator */
+    line-height: 1.8; /* Ensures good line spacing for readability */
+    margin-top: 20px; /* Adds spacing above the section */
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url('images/image2.jpg'); /* Replace 'background.jpg' with your image URL */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background image stay fixed while scrolling */
+    height: 100vh; /* Ensure the background image covers the full viewport */
+    color: white; 
+}
